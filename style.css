@@ -1,5 +1,33 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: 0;
+    background: repeating-radial-gradient(circle at 50%, #546A76, #88A0A8, #B4CEB3, #DBD3C9, #FAD4D8, 
+            #DBD3C9, #B4CEB3, #88A0A8, #546A76 450px);
+    background-attachment: fixed;
+}
+
+.header, .footer{
+    height: 60px;
+}
+
+.body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .calculator{
-    border: 2px solid black;
+    border-width: 10px;
+    border-style: solid;
+    border-image: radial-gradient(circle at center, #546A76, rgba(0, 0, 0, 0)) 10%;
+    border-radius: 10px;
     font-size: 30px;
     height: 620px;
     width: 450px;
@@ -36,17 +64,17 @@ button{
     font-size: 30px;
     flex: 1;
     border-radius: 10px;
-    background-color: lightpink;
+    background-color: #FAD4D8;
 }
 
 button:hover{
-    background-color: aquamarine;
+    background-color: #88A0A8;
 }
 
 .num{
-    background-color: lightgreen;
+    background-color: #B4CEB3;
 }
 
-.delete, .clear{
-    background-color: lightcoral;
+#delete, #clear{
+    background-color: rgb(236, 138, 138);
 }
