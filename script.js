@@ -32,7 +32,7 @@ const equal = document.getElementById('equal');
 equal.onclick = () => equation();
 
 function equation(){
-    result = eval(inputDisplay.textContent);
+    result = eval(inputDisplay.textContent).toFixed(4);
     tempResult = result;
     resultDisplay.textContent = result;
 }

@@ -6,8 +6,8 @@ body{
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
     margin: 0;
-    background: repeating-radial-gradient(circle at 50%, #546A76, #88A0A8, #B4CEB3, #DBD3C9, #FAD4D8, 
-            #DBD3C9, #B4CEB3, #88A0A8, #546A76 450px);
+    background: repeating-radial-gradient(circle at 150%, #546A76, #88A0A8, #B4CEB3, #DBD3C9, #FAD4D8, 
+            #DBD3C9, #B4CEB3, #88A0A8, #546A76 850px);
     background-attachment: fixed;
 }
 
@@ -50,6 +50,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
 
 .buttons{
     margin: 10px;
