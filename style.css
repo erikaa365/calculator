@@ -1,14 +1,17 @@
 .calculator{
     border: 2px solid black;
+    font-size: 30px;
     height: 620px;
     width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: lightgrey;
 }
 
 .result{
     border: 2px solid black;
+    background-color: antiquewhite;
     box-sizing: border-box;
     height: 90px;
     margin: 10px;
@@ -30,10 +33,20 @@
 
 button{
     border: 2px solid black;
+    font-size: 30px;
     flex: 1;
     border-radius: 10px;
+    background-color: lightpink;
 }
 
 button:hover{
     background-color: aquamarine;
+}
+
+.num{
+    background-color: lightgreen;
+}
+
+.delete, .clear{
+    background-color: lightcoral;
 }
