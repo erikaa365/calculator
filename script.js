@@ -32,9 +32,21 @@ const equal = document.getElementById('equal');
 equal.onclick = () => equation();
 
 function equation(){
-    result = eval(inputDisplay.textContent).toFixed(4);
-    tempResult = result;
-    resultDisplay.textContent = result;
+    try{
+        eval(inputDisplay.textContent)
+    }
+    catch(e){
+        if(e instanceof SyntaxError){
+            resultDisplay.textContent = 'error';
+        }
+    }
+    finally{
+        result = parseFloat(eval(inputDisplay.textContent).toFixed(4));
+
+        tempResult = result;
+        resultDisplay.textContent = result;
+    }
+    
 }
 
 //Delete
