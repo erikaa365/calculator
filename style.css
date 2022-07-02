@@ -6,8 +6,7 @@ body{
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
     margin: 0;
-    background: repeating-radial-gradient(circle at 150%, #546A76, #88A0A8, #B4CEB3, #DBD3C9, #FAD4D8, 
-            #DBD3C9, #B4CEB3, #88A0A8, #546A76 850px);
+    background: linear-gradient(45deg, #4a6b7c, #63b3ce, #88d486, rgba(228, 145, 145, 0.774));
     background-attachment: fixed;
 }
 
@@ -35,6 +34,8 @@ body{
     flex-direction: column;
     justify-content: space-between;
     background-color: lightgrey;
+    box-shadow:  5px 5px 35px 10px rgba(0,0,0,0.72);
+
 }
 
 .result{
@@ -65,7 +66,7 @@ button{
     font-size: 30px;
     flex: 1;
     border-radius: 10px;
-    background-color: #FAD4D8;
+    background-color: #B4CEB3;
 }
 
 button:hover{
@@ -73,7 +74,7 @@ button:hover{
 }
 
 .num{
-    background-color: #B4CEB3;
+    background-color: #546a76ab;
 }
 
 #delete, #clear{
